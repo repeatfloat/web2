@@ -1,31 +1,82 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import index from '@/components/index'
-import nav from '@/components/nav'
-import about from '@/components/about'
-import adv from '@/components/adv'
-import product from '@/components/product'
-import analysis from '@/components/analysis'
-import strength from '@/components/strength'
-import raiders from '@/components/raiders'
-import vi from '@/components/vi'
-import question from '@/components/question'
-import contact from '@/components/contact'
+import HelloWorld from '@/components/HelloWorld'
+import Home from '@/components/Home'
+import understandUs from '@/components/understandUs'
+import aslide from '@/components/aslide'
+import brand from '@/components/brand'
+import popularity from '@/components/popularity'
+import market from '@/components/market'
+import Win from '@/components/Win'
+import imageDisplay from '@/components/imageDisplay'
+import messageBoard from '@/components/messageBoard'
+import contactUs from '@/components/contactUs'
+import callmidea from '@/components/callmidea'
+
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    {path: '/', name: 'index', component: index},
-    {path: '/nav', name: 'nav', component: nav},
-    {path: '/about', name: 'about', component: about},
-    {path: '/adv', name: 'adv', component: adv},
-    {path: '/product', name: 'product', component: product},
-    {path: '/analysis', name: 'analysis', component: analysis},
-    {path: '/strength', name: 'strength', component: strength},
-    {path: '/raiders', name: 'raiders', component: raiders},
-    {path: '/vi', name: 'vi', component: vi},
-    {path: '/question', name: 'question', component: question},
-    {path: '/contact', name: 'contact', component: contact}
+    {
+      path: '/',
+      name: 'HelloWorld',
+      component: HelloWorld
+    },
+    {
+      path: '/Home',
+      name: 'Home',
+      component: Home
+    },
+    {
+      path: '/understandUs',
+      name: 'understandUs',
+      component: understandUs
+    },
+    {
+      path: '/aslide',
+      name: 'aslide',
+      component: aslide
+    },
+    {
+      path: '/brand',
+      name: 'brand',
+      component: brand
+    },
+     {
+      path: '/popularity',
+      name: 'popularity',
+      component: popularity
+    },
+    {
+      path: '/market',
+      name: 'market',
+      component: market
+    },
+     {
+      path: '/Win',
+      name: 'Win',
+      component: Win
+    },
+     {
+      path: '/imageDisplay',
+      name: 'imageDisplay',
+      component: imageDisplay
+    },
+    {
+      path: '/messageBoard',
+      name: 'messageBoard',
+      component: messageBoard
+    },
+    {
+      path: '/contactUs',
+      name: 'contactUs',
+      component: contactUs
+    },
+    {
+      path: '/callmidea',
+      name: 'callmidea',
+      component: callmidea
+    }
   ]
 })
